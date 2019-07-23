@@ -9,6 +9,7 @@
 # chmod 777 ccc.sh
 # ./ccc.sh
 # ----------------------------------------------------------------------
-echo {a..z}{a..z}{a..z} >> words1.txt
-sed 's/\s\+/\n/g' words1.txt > words2.txt
+echo {a..z}{a..z}{a..z} >> temp.txt
+sed 's/\s\+/\n/g' temp.txt > 3letterWords.txt
+rm -rf temp.txt
 echo  Done...!
